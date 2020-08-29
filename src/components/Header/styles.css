@@ -1,0 +1,116 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header .itensMenu {
+  display: none;
+}
+
+header > img {
+  width: 20rem;
+}
+
+header ul {
+  list-style: none;
+  
+}
+
+header ul li  a{
+  display: flex;
+  align-items: center;
+}
+
+header ul li  a span:first-child {
+  margin-right: 5px;
+}
+
+header ul li  a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  header > img {
+    width: 16rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  
+  header .menu-toggle {
+    width: 40px;
+    height: 30px;
+    
+  }
+  
+  
+  .one,
+  .two,
+  .three {
+    background-color: var(--primary-color);
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.4s;
+  }
+
+  
+  
+  header.activate .menu-toggle{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  header.activate .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  header.activate .two {
+    opacity: 0;
+  }
+
+  header.activate .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  header.activate {
+    display: block;
+    overflow: hidden;
+  }
+
+  header.activate .itensMenu {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    
+  }
+  
+  
+  
+  header.active  .itensMenu a {
+    font-size: 2.4rem;
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+
+  
+}

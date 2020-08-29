@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #007DC4;
+  --background-color: #F1F8FB;
+  --font-color: #777777;
+  --input-color: #1D6D8A;
+  --font-color-input: #BDD4DD;
+  
+}
+
