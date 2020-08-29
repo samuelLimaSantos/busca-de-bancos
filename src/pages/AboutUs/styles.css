@@ -1,13 +1,9 @@
-.aboutUs-page {
-  display: grid;
-  grid-template-rows: 10vh 70vh 20vh;
-}
-
 .aboutUs-page .aboutUsContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 70vh;
 }
 
 .aboutUs-page .aboutUsContent h1 {
