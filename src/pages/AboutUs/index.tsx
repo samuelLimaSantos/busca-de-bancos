@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
       <div className="aboutUsContent">
         <h1>Sobre o projeto</h1>
         <span></span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deserunt recusandae, hic temporibus delectus nostrum ducimus voluptatem totam quia culpa alias omnis dolore obcaecati sapiente illo vero. Saepe, ad aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui illo dicta nihil, aspernatur optio adipisci ratione aliquid obcaecati error, commodi corporis? Error reprehenderit officia maxime dolores, enim sint aspernatur?</p>
+        <p>O buscador de bancos é um projeto desenvolvido por Samuel Santos com o objetivo de realizar o teste prático para vaga de desenvolvedor front-end JR da Justa Pagamentos. Nesta pequena aplicação o usuário pode interagir com uma lista de bancos, com a opção de adicioná-los e retirá-los da lista.</p>
       </div>
       <div className="footer">
         <p>Desenvolvido com {"  "}
