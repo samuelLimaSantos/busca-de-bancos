@@ -40,7 +40,7 @@ header ul li a:hover {
 }
 
 @media (max-width: 750px) {
-  header > img {
+  header a  img {
     width: 16rem;
   }
 
@@ -99,11 +99,8 @@ header ul li a:hover {
     width: 100vw;
     height: 100vh;
     text-align: center;
-    
   }
-  
-  
-  
+
   header.active  .itensMenu a {
     font-size: 2.4rem;
     transition-duration: 0.5s;

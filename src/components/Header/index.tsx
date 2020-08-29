@@ -19,7 +19,9 @@ const Header: React.FC<HeaderProps> = ({ label, link }) => {
 
   return (
     <header>
-      <img src={logoImg} alt="Imagem da logo" />
+      <a href="https://www.justa.com.vc/">
+        <img src={logoImg} alt="Imagem da logo" />
+      </a>
       <div className="menu-toggle" onClick={handleShowMenu}>
         <div className="one"></div>
         <div className="two"></div>

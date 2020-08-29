@@ -25,6 +25,12 @@
   width: 70%;
 }
 
+.aboutUs-page .aboutUsContent p a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .aboutUs-page .footer {
   display: flex;
   flex-direction: column;
