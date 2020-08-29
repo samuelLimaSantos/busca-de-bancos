@@ -1,4 +1,73 @@
-.home-page {
-  display: grid;
-  grid-template-rows: 10% 90%;
+
+.home-page .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.6rem;
+  margin-bottom: 30px;
 }
+
+.home-page .home-content h1 {
+  font-size: 5.4rem;
+  color: var(--primary-color);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page .home-content span {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 2px ;
+  width: 80%;
+  background-color: var(--primary-color);
+}
+
+.home-page .home-content .input-select {
+  width: 70%;
+}
+
+.home-page .home-content .input-select label h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.home-page .home-content .bank-list {
+  margin-top: 36px;
+  width: 70%;
+  border: 2px solid var(--font-color-input);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.home-page .home-content .bank-list .header-bank-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.home-page .home-content .bank-list .header-bank-list img {
+  cursor: pointer;
+}
+
+.home-page .home-content .bank-list .content-bank-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.home-page .home-content .bank-list .content-bank-list img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+@media (max-width: 750px) {
+  .home-page .home-content h1 {
+    font-size: 3.6rem;
+  }
+}
+

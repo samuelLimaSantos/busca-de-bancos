@@ -2,9 +2,15 @@ import React from 'react';
 import logoImg from '../../assets/logo_justa.svg';
 import { Link } from 'react-router-dom';
 import aboutUsIcon from '../../assets/about-us-icon.svg';
+import homeIncon from '../../assets/home_icon.svg';
 import './styles.css';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  label: string;
+  link: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ label, link }) => {
 
   function handleShowMenu() {
     document.querySelector('header')?.classList.toggle('activate');
@@ -21,19 +27,19 @@ const Header: React.FC = () => {
       </div>
       <ul className='itensMenu'>
         <li>
-          <Link to="/aboutUs">
-            Sobre nós
-            </Link>
+          <Link to={link}>
+            {label}
+          </Link>
         </li>
       </ul>
 
       <ul>
         <li>
-          <Link to="/aboutUs">
+          <Link to={link}>
             <span>
-              <img src={aboutUsIcon} alt="Ícone do sobre nós" />
+              <img src={label === 'Home' ? homeIncon : aboutUsIcon} alt="Ícone" />
             </span>
-            Sobre nós
+            {label}
           </Link>
         </li>
       </ul>

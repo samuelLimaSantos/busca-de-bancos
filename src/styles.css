@@ -10,7 +10,9 @@ html, body, #root {
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
 }
+
 
 html {
   font-size: 62.5%;
@@ -27,7 +29,7 @@ body.hidden {
 :root {
   --primary-color: #007DC4;
   --background-color: #F1F8FB;
-  --font-color: #777777;
+  --font-color: #646363;
   --input-color: #1D6D8A;
   --font-color-input: #BDD4DD;
   
